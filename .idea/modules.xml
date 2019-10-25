@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/Library.iml" filepath="$PROJECT_DIR$/.idea/Library.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/eureka-server/eureka-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/library-crud-service/library-crud-service.iml" filepath="$PROJECT_DIR$/library-crud-service/library-crud-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library-edge-service/library-edge-service.iml" filepath="$PROJECT_DIR$/library-edge-service/library-edge-service.iml" />
     </modules>
   </component>
 </project>
