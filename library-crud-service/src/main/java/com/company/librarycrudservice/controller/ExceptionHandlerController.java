@@ -48,7 +48,7 @@ public class ExceptionHandlerController {
      */
 
     @ExceptionHandler({NoSuchElementException.class})
-    public ResponseEntity<VndErrors> noEntityFoundForThatId(IllegalArgumentException e, WebRequest request) {
+    public ResponseEntity<VndErrors> noEntityFoundForThatId(NoSuchElementException e, WebRequest request) {
         VndErrors errors = new VndErrors(request.toString(), e.getMessage());
         ResponseEntity<VndErrors> responseEntity = new ResponseEntity<>(errors, HttpStatus.NOT_FOUND);
         return responseEntity;

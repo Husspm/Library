@@ -95,6 +95,15 @@ public class BookControllerTest {
     }
 
     @Test
+    public void readBookIdNotFoundWillResultIn404() throws Exception {
+        when(dao.findById(10)).thenReturn(null);
+
+        mockMvc.perform(get("books/10"))
+                .andDo(print())
+                .andExpect(status().isNotFound());
+    }
+
+    @Test
     public void deleteBook() throws Exception {
         mockMvc.perform(delete("/books/"+1))
                 .andDo(print())
